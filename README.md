@@ -1,2 +1,2 @@
 # projeto-sites
- Site Projects Samples 
+ Projetos de Sites e Landing Pages criadas em Lives e Cursos
