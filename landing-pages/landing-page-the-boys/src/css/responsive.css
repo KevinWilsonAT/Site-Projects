@@ -1,0 +1,161 @@
+@media (max-width: 1024px){
+    header{
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    body{
+        position: fixed;
+        top: 0;
+        background-size: auto;
+    }
+
+    header .logo{
+        width: 100px;
+    }
+
+    .navigation ul li a{
+        font-size: 22px;
+    }
+
+    .navigation .search{
+        width: 24px;
+    }
+
+    main section .logoboys{
+        width: 10em;
+        margin: 1em 0;
+    }
+
+    main section .btn-box{
+        gap: 10px;
+    }
+
+    .btn-box .btn{
+        padding: 15px 35px;
+        margin-bottom: 1em;
+    }
+
+    .btn-box2{
+        padding: 15px 25px;
+        font-size: 20px;
+        gap: 5px;
+    }
+
+    .btn-box2 .play{
+        width: 1em;
+    }
+
+    footer .cards{
+        margin-left: 10em;
+    }
+
+    footer .cards .card{
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px){
+
+    header{
+        padding: 20px;
+    }
+    
+    header .logo{
+        width: 100px;
+    }
+
+    .navigation ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main section .logoboys{
+        width: 10em;
+        margin: 0.5em 0;
+    }
+    
+    main section .btn-box{
+        gap: 10px;
+    }
+    
+    main section .text{
+        font-size: 10px;
+        margin-left: -3%;
+        text-align: justify;
+        max-width: 80%;
+    }
+
+    footer .cards{
+        margin-left: 8em;
+    }
+
+    footer .cards .card{
+        height: 137px;
+    }
+}
+
+@media (max-width: 425px) {
+    header{
+        padding: 15px;
+    }
+    
+    header .logo{
+        margin-left: -30%;
+        width: 100px;
+    }
+
+    .navigation ul{
+        margin-left: -13.5%;
+        gap: 15px;
+    }
+
+    main section .logoboys{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+        width: 8em;
+    }
+    
+    main section .btn-box{
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .btn-box{
+        display: flex;
+        flex-direction: column;
+        margin-left: 11%;
+        padding: 10px 25px;
+        margin-bottom: 1em;
+    }
+
+    .btn-box2{
+        margin-left: 15%;
+        padding: 15px 25px;
+        font-size: 20px;
+        gap: 5px;
+    }
+
+    .navigation ul li a{
+        font-size: 14px;
+    }
+    
+    main section .text{
+        font-size: 10px;
+        margin-left: -3%;
+        text-align: justify;
+        max-width: 80%;
+    }
+
+    footer .cards{
+        margin-left: 8em;
+    }
+
+    footer .cards .card{
+        height: 97px;
+    }
+}

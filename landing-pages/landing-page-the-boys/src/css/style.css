@@ -9,10 +9,9 @@
 }
 
 body{
-    background: url(images/bg.jpg);
+    background: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /*overflow: hidden;*/
 }
 
 header{
