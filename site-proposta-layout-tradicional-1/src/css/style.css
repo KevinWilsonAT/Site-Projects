@@ -1,0 +1,520 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* =========================================================================================== */
+
+/* MAIN STYLE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.interface{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.interface img.logo{
+    margin-top: 30px;
+    width: 10vh;
+}
+
+img.logo{
+    transition: .2s;
+}
+
+img.logo:hover{
+    transform: scale(1.1);
+}
+
+.btn-menu-open{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contact button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #7ED957;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7ED957;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social .counter{
+    text-align: right;
+    margin-right: 15px;
+}
+
+h2.title{
+    color: #fff;
+    font-size: 38px;
+}
+
+h2.title span{
+    color:#7ED957;
+}
+
+button:hover{
+    background-color: #7ED957;
+    box-shadow: 0px 0px 8px #7ed957a6;
+    transform: scale(1.05);
+}
+
+.blink{
+    animation: blink .3s infinite alternate;
+}
+
+@keyframes blink {
+    0%{
+        color: #7ED957;
+    }
+    100%{
+        color: #00000000;
+    }
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7ED957;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* =========================================================================================== */
+
+/* SCROLL TO THE TOP BUTTON */
+
+#scrollTopBtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 80px;
+    z-index: 10;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #7ED957;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 45px;
+    transition: .2s;
+}
+
+.scrollTopBtn{
+    animation: slideIn .5s ease;
+}
+  
+#scrollTopBtn:hover {
+    background-color: transparent;
+    filter: drop-shadow(0px 0px 28px #7ed957a6);
+    transform: scale(1.05);
+}
+
+@keyframes slideIn {
+    0%{
+        right: -60px;
+    }
+    100%{
+        right: 80px;
+    }
+}
+
+/* =========================================================================================== */
+
+/* HEADER STYLE */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #707070;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+}
+
+header nav.desktop-menu a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.desktop-menu ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* =========================================================================================== */
+
+/* MOBILE MENU STYLE */
+
+.btn-menu-open i{
+    display: block;
+    color: #7ED957;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    background-color: #000000F6;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.mobile-menu.menu-open{
+    width: 70%;
+}
+
+.mobile-menu.menu-open ~ .overlay-menu{
+    display: block;
+}
+
+.mobile-menu .btn-menu-close{
+    padding: 20px 5%;
+}
+
+.mobile-menu .btn-menu-close i{
+    color: #7ED957;
+    font-size: 30px
+}
+
+.mobile-menu nav ul{
+    text-align: right;
+}
+
+.mobile-menu nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block; 
+}
+
+.mobile-menu nav ul li a:hover{
+    background-color: #7ED957;
+    color: #000;
+    font-weight: 400;
+}
+
+.overlay-menu{
+    background-color: #000000A7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+}
+
+/* =========================================================================================== */
+
+/* SITE TOP STYLE */
+
+section.site-top{
+    padding: 40px 4%;
+}
+
+section.site-top .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.site-top h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+    display: inline;
+}
+
+.site-top .txt-site-top span{
+    font-size: 38px;
+    font-weight: 600;
+    color: #7ED957;
+}
+
+.site-top .txt-site-top p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.site-top .img-site-top img{
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float{
+    0%{
+        top: 0;
+        transform: rotateY(0deg);
+    }
+    100%{
+        top: 30px;
+        transform: rotateY(40deg);
+    }
+}
+
+.shadow
+{
+    position: absolute;
+    right: 22vh;
+    top: 77vh;
+    width: 300px;
+    height: 15px;
+    transform: translate(-50%,100%);
+    background: rgba(255,255,255,.05);
+    border-radius: 50%;
+    z-index: 5;
+    filter: blur(3px);
+    animation: shadow 2s ease-in-out infinite alternate;
+}
+@keyframes shadow
+{
+    0%{
+        transform:  translate(-50%,100%) scale(1);
+    }
+    100%{
+        transform:  translate(-50%,100%) scale(0.5);
+    }
+}
+
+/* =========================================================================================== */
+
+/* EXPERTISES STYLE */
+
+section.expertises{
+    padding: 40px 4%;
+}
+
+.expertises .flex{
+    gap: 60px;
+}
+
+.expertises .expertises-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #7ED957;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.expertises .expertises-box:hover{
+    box-shadow: 0 0 8px #57d987;
+}
+
+.expertises .expertises-box img{
+    transition: all .5s ease-in-out;
+}
+
+.expertises .expertises-box img:hover{
+    transform: scale(1.12);
+}
+
+/* tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 210px;
+    background-color: #555555F5;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 0;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.5s ;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+/* end tooltip */
+
+.expertises .expertises-box i{
+    font-size: 70px;
+    color: #7ED957;
+    display: flex;
+    justify-content: center;
+}
+
+.expertises .expertises-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.expertises-box .expertises-box-text{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.hl{
+    color: #57d987;
+}
+
+.expertises-box{
+    width: 100%;
+}
+
+/* =========================================================================================== */
+
+/* ABOUT ME STYLE */
+
+section.about-me{
+    padding: 80px 4%;
+}
+
+section.about-me .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.img-about img{
+    border-radius: 25px;
+}
+
+.about-me .txt-about{
+    color: #fff;
+}
+
+.about-me .txt-about h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.about-me .txt-about h2 span{
+    color: #7ED957;
+    display: inline-block;
+}
+
+.about-me .txt-about p{
+    font-size: 19px;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.about-me .txt-about p a{
+    color: #B4D957;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* =========================================================================================== */
+
+/* FOOTER STYLE */
+
+footer{
+    padding: 40px 4%;
+}
+
+footer .logo-footer img{
+    width: 10vh;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.border{
+    border-top: 2px solid #7ED957;
+}
+
+footer .line-footer p i{
+    color: #7ED957;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
