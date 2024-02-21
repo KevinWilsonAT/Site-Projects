@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Muito prazer, sou Kevin Teixeira e esse é o meu Portfólio">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="./src/css/portfolio.css">
+        <link rel="stylesheet" href="./src/css/responsive.css">
+        <link rel="shortcut icon" href="./src/img/icon-placeholder.png" type="image/x-icon">    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--Bootstrap icons-->
+        <title>Kevin Wilson - Portfólio</title>
+    </head>
+    <body onload="typeWriter()">
+        <header>
+            <div class="interface" id="home">
+                <a href="" onclick="topFunction()">
+                    <img class="logo" src="./src/img/logo-placeholder-image.png" alt="Logo">
+                </a><!--logo-->
+
+                <nav class="desktop-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                    </ul>
+                </nav>
+
+                <div class="btn-contact">
+                    <a href="#" target="_blank"> <!-- link to phone or whatsapp -->
+                        <button>Contato</button>
+                    </a>
+                </div><!--btn-contact-->
+
+                <div class="btn-menu-open" id="btn-menu-open">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="mobile-menu" id="mobile-menu">
+                    <div class="btn-menu-close"><i class="bi bi-x-lg"></i></div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#expertises">Section 1</a></li>
+                            <li><a href="#about-me">Section 2</a></li>
+                            <li><a href="#portfolio">Section 3</a></li>
+                            <li><a href="#" target="_blank">Contato</a></li> <!-- link to phone or whatsapp -->
+                        </ul>
+                    </nav>
+                </div><!--mobile-menu-->
+                <div class="overlay-menu" id="overlay-menu"></div>
+            </div><!--interface-->
+        </header>
+
+        <main>
+            <button onclick="topFunction()" class="scrollTopBtn" id="scrollTopBtn"><i class="bi bi-caret-up-square"></i></button>
+            <section class="site-top">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="txt-site-top">
+                            <h1 id="slogan"></h1><span class="blink">_</span>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, animi. Eaque libero voluptatum reiciendis debitis esse officia iusto possimus doloremque ipsa nostrum fuga dicta, placeat adipisci sit reprehenderit architecto dolore.</p>
+                        </div><!--txt-site-top-->
+
+                        <div class="img-site-top">
+                            <img src="./src/img/round-placeholder.png" alt="">
+                        </div><!--img-site-top-->
+                        <div class="shadow"></div>
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section><!--site top-->
+            <section class="expertises" id="section1">
+                <div class="interface">
+                    <h2 class="title">SECTION <span>1.</span> <span class="blink">_</span></h2>
+                    <div class="flex">
+                        <div class="expertises-box">
+                            <i class="bi bi-code-square"></i>
+                            <h3>DIV LEFT</h3>
+                            <p class="expertises-box-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, alias? Animi quaerat magni quas vitae veniam! Molestias, nulla possimus libero ex suscipit nesciunt voluptatibus ipsam necessitatibus dolorum atque odit vero!
+                            </p>
+                            <p class="expertises-box-text hl">Title Top Div Left:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Title Middle Div Left:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Title Middle Bottom Div Left:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Title Bottom Div Left:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="expertises-box">
+                            <i class="bi bi-code-square"></i>
+                            <h3>DIV CENTER</h3>
+                            <p class="expertises-box-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic libero, distinctio beatae incidunt unde officiis dignissimos error non expedita atque obcaecati, corporis nisi minus consequatur illum quisquam quasi totam sequi.
+                            </p>
+                            <p class="expertises-box-text hl">Title Top Div Center:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Title Middle Div Center:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Title Middle Bottom Div Center:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Title Bottom Div Center:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expertises-box">
+                            <i class="bi bi-code-square"></i>
+                            <h3>DIV RIGHT</h3>
+                            <p class="expertises-box-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cumque consequatur et dolor ipsum, corrupti vel officia inventore optio voluptas voluptatem accusamus aspernatur, adipisci aut quis enim, similique sapiente modi.
+                            </p>
+                            <p class="expertises-box-text hl">Title Top Div Right:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Title Middle Div Right:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Title Middle Bottom Div Right:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Title Bottom Div Right:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="./src/img/none.png" width="16" alt="some text">
+                                    <span class="tooltiptext">Tooltip text:</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section>
+            <section class="about-me" id="section2">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="img-about">
+                            <img src="./src/img/img.png" alt="">
+                        </div><!--img-about-->
+                        
+                        <div class="txt-about">
+                            <h2 class="title">SECTION <span>2.</span><span class="blink">_</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquam nisi, libero impedit iusto ducimus voluptates modi magnam pariatur nulla optio neque sapiente atque tempora placeat ipsam, necessitatibus voluptatem iste.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam reiciendis illum excepturi et nam culpa veritatis porro ipsum. Aliquam officia id unde beatae reprehenderit repellendus corporis magnam error excepturi at.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit nesciunt vel quisquam minima fugiat deserunt, necessitatibus ab eum non fugit distinctio est ea rem labore. Nobis necessitatibus minima saepe.</p>
+                            <br>
+                            <div class="btn-social">
+                                <a href="#" target="_blank"><button><i class="#"></i></button></a>
+                                <a href="#" target="_blank"><button><i class="#"></i></button></a>
+                            </div><!--btn-social-->
+                        </div><!--txt-about-->
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section><!--about-->
+            <section class="portfolio" id="section3">
+                <div class="interface">
+                    <h2 class="title">SECTION &nbsp;<span>3.</span> <span class="blink">_</span></h2>
+                    <!-- TABS TO SEPARATE TYPES OF PROJECTS -->
+                    <!-- Control buttons -->
+                    <div class="portfolio-filter" id="portfolio-filter">
+                        <button class="project active" onclick="filterSelection('all')"> All Portfolio Projects</button>
+                        <button class="project" onclick="filterSelection('my')"> My Projects</button>
+                        <button class="project" onclick="filterSelection('others1')"> Other Projects #1</button>
+                        <button class="project" onclick="filterSelection('others2')"> Other Projects #2</button>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="flex">
+                            <div class="filterDiv my">
+                                <a href="#">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/project-1.jpg);">
+                                        <img src="./src/img/author.png" class="author" title="Author 1">
+                                        <div class="overlay">Project 1</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv others1">
+                                <a href="#">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/project-2.jpg);">
+                                        <img src="./src/img/author.png" class="author" title="Author 2">
+                                        <div class="overlay">Project 2</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv others1">
+                                <a href="#">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/project-3.jpg);">
+                                        <img src="./src/img/author.png" class="author" title="Author 3">
+                                        <div class="overlay">Project 3</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--flex 1st row-->
+                        <div class="flex">
+                            <div class="filterDiv others1">
+                                <a href="#">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/project-4.jpg);">
+                                        <img src="./src/img/author.png" class="author" title="Author 4">
+                                        <div class="overlay">Project 4</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv others1">
+                                <a href="#">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/project-5.jpg);">
+                                        <img src="./src/img/author.png" class="author" title="Author 5">
+                                        <div class="overlay">Project 5</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv others1">
+                                <a href="#">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/project-6.jpg);">
+                                        <img src="./src/img/author.png" class="author" title="Author 6">
+                                        <div class="overlay">Project 6</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--flex 2nd row-->
+                        <div class="flex">
+                            <div class="filterDiv others1">
+                                <a href="#">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/project-7.jpg);">
+                                        <img src="./src/img/author.png" class="author" title="Author 7">
+                                        <div class="overlay">Project 7</div>
+                                    </div>
+                                </a>
+                            </div>    
+                            <div class="filterDiv others1">
+                                <a href="#">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/project-8.jpg);">
+                                        <img src="./src/img/author.png" class="author" title="Author 8">
+                                        <div class="overlay">Project 8</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv others2">
+                                <a href="#">
+                                    <div class="img-port">        
+                                        <div class="overlay">Coming Soon</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--flex 3rd row-->
+                    </div><!--filter container-->
+                </div><!--interface-->
+            </section><!--portfolio-->
+        </main>
+        <footer>
+            <div class="interface">
+                <div class="line-footer">
+                    <div class="flex">
+                        <div class="logo-footer">
+                            <a href="" onclick="topFunction()"><img class="logo" src="./src/img/logo-placeholder-image.png" alt="Logo"></a>
+                        </div><!--logo-footer-->
+                        <div class="btn-social">
+                            <a href="" target="_blank"><button><i class=""></i></button></a>
+                            <a href="" target="_blank"><button><i class=""></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--flex-->
+                </div><!--line-footer-->
+                <div class="line-footer border">
+                    <p><i class="bi bi-envelope-fill"></i><a href="mailto:#">your.email@goes.here</a></p>
+                </div><!--line-footer-->
+            </div><!--interface-->
+        </footer>
+    </div>
+    <script src="./src/script/script.js" defer></script>
+    <script src="./src/script/portfolio-filter.js"></script>
+</body>
+</html>
